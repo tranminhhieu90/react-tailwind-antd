@@ -1,12 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import {Provider} from "react-redux"
+import {store} from "./app/store";
 import reportWebVitals from "./reportWebVitals";
 import { AppRouter } from "./router";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
       <AppRouter/>
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById("root")
 );
 
