@@ -1,5 +1,5 @@
-import counterReducer from '../slide/counterSlide';
-
-export const rootReducer = {
+import counterReducer from 'app/slide/counterSlide';
+import { combineReducers } from 'redux';
+export const rootReducer = combineReducers({
   counter: counterReducer
-}
+})
